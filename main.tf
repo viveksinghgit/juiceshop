@@ -39,7 +39,7 @@ resource "azurerm_container_group" "juiceshop" {
   resource_group_name = azurerm_resource_group.my_rg.name
   os_type             = "Linux" 
   ip_address_type     = "Private"
-  subnet_ids           = [azurerm_subnet.my_subnet.id]  # Add this line to specify the subnet
+  subnet_ids           = [azurerm_subnet.my_subnet.id] 
 
   container {
     name   = "juiceshop"
